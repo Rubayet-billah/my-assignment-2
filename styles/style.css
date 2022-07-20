@@ -49,6 +49,23 @@ section{
  .button>a>p{
     margin-left: 5px;
  }
+                  /* button animation  */
+
+@keyframes sliding {
+   0%{
+      background-color: red;
+      padding-right: 15px;
+   }
+   100%{
+      background-color: rgb(255, 79, 79);
+      padding-right: 25px;
+   }
+}
+.top-banner .button{
+   animation: sliding 0.7s ease-in-out 0s infinite forwards;
+}
+
+
  .banner-image>img{
     width: 100%;
  }
@@ -73,7 +90,15 @@ section{
 .links>a{
     text-decoration: none;
     font-size: 1.5em;
+    font-weight: 700;
     color: black;
+}
+#special-link{
+   background-color: red;
+   color: white;
+}
+#special-link>a{
+   color: white;
 }
          /* blog grid section  */
 .grid-blogs{
@@ -113,6 +138,9 @@ section{
    margin-left: 15px;
    justify-content: space-between;
 }
+.extra-button{
+   display: none;
+}
 
             /*  footer style  */
 
@@ -147,6 +175,8 @@ hr{
         ----------- media queries-----------
                                --------------  */
 
+                   /* mobile devices */
+
 @media only screen and (max-width:688px) {
    section{
       width: 100%;
@@ -159,7 +189,6 @@ hr{
       width: 90%;
    }
    .banner-heading{
-      margin-top: 100px;
       font-size: 2em;
       margin: 20px 0;
    } 
@@ -181,7 +210,53 @@ hr{
       grid-template-columns: 1fr;
       margin-top: 50px;
    }
+   .extra-button{
+      display: none;
+   }
    .footer-items{
       flex-direction: column;
+   }
+}
+
+                     /* tablet devices */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+   .middle-section{
+      flex-direction: column;
+      align-items: center;
+   }
+   .top-links{
+      background-color: white;
+      display: flex;
+      justify-content:center ;
+      align-items: center;
+      padding: 0;
+   }
+   .links{
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 15px 10px;
+
+   }
+   .grid-blogs{
+      grid-template-columns: repeat(2,1fr);
+      margin-top: 40px;
+   }
+   .grid-blogs>.blog:last-child{
+      display: none;
+   }
+   .extra-button{
+      display: block;
+      margin-top: 25px;
+   }
+   .extra-button>.button{
+      padding: 15px 30px;
+      font-size: 1.3em;
+   }
+   .footer-items{
+      width: 70%;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
    }
 }
