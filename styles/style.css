@@ -129,12 +129,13 @@ aside{
    border-radius: 10px;
 }
 
-.transfar{
+.transfar>button{
    border: 1px solid black;
    border-radius: 5px;
    width: fit-content;
    padding: 7px 20px;
    margin: 15px 15px;
+   cursor: pointer;
 }
 .blog-text{
    font-size: 20px;
