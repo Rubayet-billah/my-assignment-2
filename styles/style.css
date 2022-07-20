@@ -34,7 +34,7 @@ section{
     margin: 20px 0;
  }
  .button{
-    background-color: red;
+    background-color: rgb(255, 64, 47);
     width: fit-content;
     padding: 10px 20px;
     margin:20px 0;
@@ -53,7 +53,7 @@ section{
 
 @keyframes sliding {
    0%{
-      background-color: red;
+      background-color: rgb(255, 64, 47);
       padding-right: 15px;
    }
    100%{
@@ -75,6 +75,10 @@ section{
    display: flex;
 }
          /* aside section  */
+
+aside{
+   width: 20%;
+}
 .top-links{
     background-color:rgb(35, 35, 35) ;
     padding: 30px;
@@ -89,12 +93,12 @@ section{
 }
 .links>a{
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 700;
     color: black;
 }
 #special-link{
-   background-color: red;
+   background-color: rgb(255, 64, 47);
    color: white;
 }
 #special-link>a{
@@ -192,9 +196,18 @@ hr{
       font-size: 2em;
       margin: 20px 0;
    } 
+   .banner-details>p{
+      color: aqua;
+      width: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+   }
                 /* middle section  */
    .middle-section{
       flex-direction: column;
+   }
+   aside{
+      width: 100%;
    }
    .top-links{
       width: 60%;
@@ -218,9 +231,13 @@ hr{
    }
 }
 
-                     /* tablet devices */
+                     /*||tablet devices|| */
 
 @media only screen and (min-width:689px) and (max-width:992px) {
+
+            /* ||middle section||  */
+
+
    .middle-section{
       flex-direction: column;
       align-items: center;
@@ -231,6 +248,9 @@ hr{
       justify-content:center ;
       align-items: center;
       padding: 0;
+   }
+   aside{
+      width: 100%;
    }
    .links{
       border: 1px solid black;
