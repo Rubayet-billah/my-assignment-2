@@ -21,7 +21,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(35, 35, 35);
+    background-color: #03203C;
     
     color: white;
     border-radius: 30px;
@@ -84,10 +84,10 @@ section{
          /* aside section  */
 
 aside{
-   width: 300px;
+   width: 350px;
 }
 .top-links{
-    background-color:rgb(35, 35, 35) ;
+    background-color:#03203C ;
     padding: 30px;
     border-radius: 10px;
 }
@@ -159,7 +159,7 @@ aside{
             /*  footer style  */
 
 footer{
-   background-color: rgb(35, 35, 35);
+   background-color: #03203C;
    text-align: center;
    margin-top: 50px;
    color: white;
@@ -183,6 +183,10 @@ hr{
 .footer-icons>p{
    font-size: 30px;
    padding: 20px 30px;
+}
+.footer-icons>p>a{
+   text-decoration: none;
+   color: white;
 }
 
    /*----------------
@@ -286,6 +290,7 @@ hr{
       padding: 15px 30px;
       font-size: 1.3em;
    }
+                  /* footer styles  */
    .footer-items{
       width: 70%;
       flex-wrap: wrap;
